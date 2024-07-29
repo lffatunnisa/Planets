@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #070707;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/f9/37/47/f937475edd3a9ccb864184731e461e92.jpg);
+  background-size: cover;
+}
+.container {
+  max-width: 130rem;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.heading {
+  font-size: 3rem;
+  color: var(--white);
+}
+.subheading {
+  font-size: 2rem;
+  color: var(--primary);
+}
+#planets {
+  padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+  #planets {
+    padding: 7rem 0;
+  }
+}
+
+#planets .slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #planets .slider {
+    height: 45rem;
+  }
+}
+
+.slide {
+  width: 40rem;
+  height: 40rem;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .slide {
+    width: 29rem !important;
+    height: 29rem !important;
+  }
+  .slide .slide-img img {
+    width: 29rem !important;
+    height: 29rem !important;
+  }
+}
+.slide .slide-img img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+.slide .slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.slide-content .slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 6rem;
+  color: var(--white);
+}
+h2 {
+  font-size: 25px;
+}
+.desc {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  max-width: 25rem;
+  font-size: 14px;
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+.slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+  .slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+@media (max-width:450px) {
+  .slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+  .slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+}
+.slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: var(--bg);
+}
+.slider-control .slider-arrow::after {
+  content: '';
+}
+.slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+.slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+.swiper-pagination-bullet {
+  background: var(--white);
+}
